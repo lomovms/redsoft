@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background: $bg-base;
+	font-family: $font-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+	line-height: $line-height-base;
+  color: $color-base;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+    min-width: 320px;
+    overflow: hidden;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  margin-bottom: 16px;
+}
+
+a {
+	color: inherit;
+    transition: all .3s;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+    margin: 0;
+    position: relative;
+
+	& li {
+		position: relative;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+ul:not([class]) {
+    margin-bottom: $margin-bottom-list-base;
+
+    &:last-child {
+		margin-bottom: 0;
+    }
+
+    & li {
+        padding-left: $padding-left-list-base;
+
+        & + li {
+            margin-top: $margin-top-list-item;
+        }
+
+        &:before {
+            background: $bg-point-base;
+            content: '';
+            border-radius: 50%;
+            left: 3px;
+            height: $size-point;
+            position: absolute;
+            top: 8px;
+            width: $size-point;
+        }
+    }
+}
+
+ol:not([class]) {
+    counter-reset: item;
+    margin-bottom: $margin-bottom-list-base;
+
+    &:last-child {
+		margin-bottom: 0;
+    }
+
+    & li {
+        padding-left: $padding-left-list-base;
+
+        & + li {
+            margin-top: $margin-top-list-item;
+        }
+
+        &:before {
+            content: counter(item)'.';
+            counter-increment: item;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: $padding-left-list-base;
+        }
+    }
+}
+
+p {
+  margin: 0 0 17px;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+    width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}

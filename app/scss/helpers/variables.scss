@@ -1,0 +1,54 @@
+/* base config settings */
+
+$bg-base: #fafaff;
+$color-base: #60759d ;
+$font-base: 'CeraRoundPro';
+$font-geometria: 'Geometria';
+$font-size-base: 16px;
+$font-weight-base: normal;
+$line-height-base: 24px;
+$margin-bottom-list-base: 36px;
+$padding-left-list-base: 16px;
+$margin-top-list-item: 16px;
+$bg-point-base: #16afe0;
+$size-point: 5px;
+$spacer: 1rem !default;
+$color-link: #e70067;
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$headings-margin-bottom:      ($spacer / 2) !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit !default;
+
+$lead-font-size:              ($font-size-base * 1.25) !default;
+$lead-font-weight:            300 !default;
+
+$small-font-size:             80% !default;
+
+$mark-padding:                .2em !default;
+
+// Параметры отступов между колонками сетки.
+$grid-gutter-padding: 1rem;
+$grid-gutter-compensation: -1rem;
+
+$max-width: 1280px;
+$page-padding: 15px;
+$page-padding-mobile: 15px;
+$sidebar-width: 290px;
+$content-gap: 40px;
+$content-gap-inner: 35px;
+$content-gap-responsive: 20px;
+$content-gap-inner-responsive: 15px;
+
+$mq-sm: "(min-width: 576px)";
+$mq-md: "(min-width: 768px)";
+$mq-lg: "(min-width: 992px)";
+$mq-xl: "(min-width: 1200px)";

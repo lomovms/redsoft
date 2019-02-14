@@ -1,0 +1,30 @@
+.elem-btn {
+  background: #e70067;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: #f0f5ff;
+  font-family: $font-geometria;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  padding: 16px 29px;
+
+  &:hover {
+    background: #c9005a;
+  }
+
+  &--header {
+    background: transparent;
+    border-color: #5489c3;
+    font-family: $font-base;
+    font-weight: bold;
+
+    &:hover {
+      background: #5489c3;
+
+    }
+  }
+}

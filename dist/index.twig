@@ -1,0 +1,84 @@
+{% extends "templates/layout.twig" %}
+
+{% block title %}
+	{{ page_title }}
+{% endblock %}
+
+{% block bodyClass %}page-main{% endblock %}
+
+{% block content %}
+
+  {% include 'templates/header.twig' %}
+
+  <div class="elem-line elem-line--one"></div>
+  <div class="elem-line elem-line--two"></div>
+
+  <div class="box-main">
+    <div class="box-main__in">
+      <div class="box-slider" data-slider>
+        <div class="box-slider__item">
+          <img src="images/example/main.jpg" alt="main img" class="box-slider__img">
+        </div>
+        <div class="box-slider__item">
+          <img src="images/example/main.jpg" alt="main img" class="box-slider__img">
+        </div>
+      </div>
+      <div class="elem-line elem-line--three"></div>
+      <div class="elem-line elem-line--four"></div>
+      <div class="elem-line elem-line--five"></div>
+      <div class="box-main__text">
+        <h1 class="box-main__title">Расширяем возможности предоставления качественных медицинских услуг</h1>
+        <div class="box-main__desc">«Дневник здоровья» – новый сервис для самоконтроля показателей состояния здоровья, разработанный для участников программы «Мое здоровье».</div>
+        <a href="#" class="elem-btn">Узнать больше</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="box-about">
+    <div class="container">
+      <div class="box-about__inner">
+        <div class="box-about__img">
+          <img src="images/example/mobile.png" alt="">
+        </div>
+        <div class="box-about__info">
+          <h2 class="box-about__title">Что такое «Дневник здоровья»?</h2>
+          <p>Дневник пациента — это удобный онлайн-сервис:</p>
+          <ul>
+            <li>Вносите результаты измерений вручную или с помощью интегрированных приборов</li>
+            <li>Ведите персональную медицинскую карту с историей ваших измерений </li>
+            <li>Делитесь результатами измерений со специалистами для повышения эффективности лечения</li>
+            <li>Получайте рекомендации, созданные специально для вас</li>
+          </ul>
+          <a href="#" class="elem-btn">Оставить заявку</a>
+        </div>
+        <div class="box-about__puls">
+          <img src="images/example/puls.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="box-function">
+    <div class="box-function__in">
+      <div class="container">
+        <h2 class="text-center">Функции приложения</h2>
+
+        <ul class="box-function__list">
+          {% for item in listFunction %}
+            <li class="box-function__item">
+              <div class="box-function__img">
+                {{ svg.icon(item.img, stp) }}
+              </div>
+              <div class="box-function__info">
+                {{ item.text }}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  {% include 'templates/footer.twig' %}
+
+{% endblock %}

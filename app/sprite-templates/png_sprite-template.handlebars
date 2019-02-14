@@ -1,0 +1,21 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<i class="icon-name"></i>
+```
+*/
+[class*="icon-"] {
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+
+{{#sprites}}
+.{{name}} {
+	content: '';
+	background-image: url('{{{escaped_image}}}');
+	background-position: {{px.offset_x}} {{px.offset_y}};
+	width: {{px.width}};
+	height: {{px.height}};
+}
+{{/sprites}}

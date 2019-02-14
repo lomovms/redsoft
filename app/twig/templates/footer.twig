@@ -1,0 +1,22 @@
+<footer class="box-footer">
+  <div class="container">
+    <div class="box-footer__inner">
+      <a href="/" class="elem-logo">
+        <img src="images/required/logo-footer.png" alt="">
+      </a>
+
+      <nav class="nav-menu nav-menu--footer">
+        <ul class="nav-menu__list">
+          {% for item in menuFooter %}
+            <li class="nav-menu__item">
+              <a href="{{ item.link }}" class="nav-menu__link">{{ item.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+    <div class="box-footer__copy">
+      Разработка сайта <a href="#">Redsoft</a>
+    </div>
+  </div>
+</footer>

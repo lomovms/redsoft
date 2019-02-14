@@ -1,0 +1,42 @@
+.box-main {
+  position: relative;
+  border-bottom-right-radius: 47%;
+  border-bottom-left-radius: 47%;
+  overflow: hidden;
+  width: 3100px;
+  left: 50%;
+  margin-left: -1550px;
+
+  &__in {
+    width: 100vw;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    height: auto;
+    width: 100%;
+    max-width: 760px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    margin-bottom: 36px;
+  }
+
+  &__desc {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 48px;
+  }
+}

@@ -1,0 +1,64 @@
+@mixin to-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin mybutton-variant($brd-color, $brd-hov-color, $txt-color, $bg-color, $bg-hov) {
+  font-weight: bold;
+  border-color: $brd-color;
+  color: $txt-color;
+  border-width: 3px;
+  outline: none;
+  box-shadow: none;
+  background: $bg-color;
+  border-radius: 0 6px;
+
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover,
+  &:active,
+  &.active {
+    outline: none;
+    box-shadow: none;
+    color: $txt-color;
+  }
+
+  &:focus,
+  &.focus {
+    &:active,
+    &.active {
+      outline: none;
+      box-shadow: none;
+      color: $txt-color;
+    }
+  }
+
+  &:hover,
+  &.hover {
+    color: $txt-color;
+    border-color: $brd-hov-color;
+    background: $bg-hov;
+  }
+
+  &:active,
+  &.active {
+    border-color: darken($brd-hov-color, 13.3%);
+    background: darken($bg-hov, 13.3%);
+  }
+
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+    color: $txt-color;
+    border-color: lighten($brd-hov-color, 39%);
+    background: lighten($bg-hov, 39%);
+
+    &:hover {
+      border-color: lighten($brd-hov-color, 39%);
+      background: lighten($bg-hov, 39%);
+    }
+  }
+}

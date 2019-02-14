@@ -1,0 +1,25 @@
+.box-about {
+  position: relative;
+  padding-bottom: 138px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 147px 0 0;
+  }
+
+  &__img {
+    flex-shrink: 0;
+    margin-right: 40px;
+    padding-left: 22px;
+    margin-bottom: -63px;
+  }
+
+  &__puls {
+    position: absolute;
+    right: 95px;
+    bottom: -53px;
+  }
+}

@@ -1,0 +1,44 @@
+.elem-line {
+  position: absolute;
+  border: 1px solid #e4e8f3;
+  left: 50%;
+  border-radius: 50%;
+
+  &--one {
+    width: 2174px;
+    height: 1409px;
+    margin-left: -2761px;
+    top: -173px;
+  }
+
+  &--two {
+    width: 2200px;
+    height: 1409px;
+    margin-left: -2200px;
+    top: -122px;
+  }
+
+  &--three {
+    width: 2278px;
+    height: 2278px;
+    margin-left: -990px;
+    top: -226px;
+    opacity: 0.1;
+  }
+
+  &--four {
+    width: 1724px;
+    height: 1724px;
+    margin-left: -632px;
+    top: 9px;
+    opacity: 0.1;
+  }
+
+  &--five {
+    width: 1186px;
+    height: 1186px;
+    margin-left: -70px;
+    top: 354px;
+    opacity: 0.1;
+  }
+}
